@@ -39,8 +39,9 @@ public class Wavelength {
 	 * @return		the frequency of the wavelength
 	 */
 	public Frequency toFrequency() {
-		// TODO: code logic
-		return new Frequency();
+		double hertz = Frequency.TUNING_STANDARD * MIDDLE_C_WAVELENGTH
+				* Math.pow(2.0, -3.0 / 4.0) / inches;
+		return new Frequency(hertz);
 	}
 	
 	/**
@@ -54,7 +55,7 @@ public class Wavelength {
 	}
 	
 	/**
-	 * The string representation of a wavelength.
+	 * The string representation of the wavelength.
 	 * 
 	 * @return		the length of the wavelength as a string
 	 */
