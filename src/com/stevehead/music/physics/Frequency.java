@@ -2,6 +2,12 @@ package com.stevehead.music.physics;
 
 import com.stevehead.music.Note;
 
+/**
+ * Frequency is a class that represents a frequency in physics. More
+ * specifically the frequency of a musical note.
+ * 
+ * @author	Steve Johnson
+ */
 public class Frequency {
 	public static final double TUNING_STANDARD = 440.0;
 	

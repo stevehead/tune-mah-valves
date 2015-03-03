@@ -6,6 +6,12 @@ import java.util.regex.Pattern;
 import com.stevehead.music.physics.Frequency;
 import com.stevehead.music.physics.Wavelength;
 
+/**
+ * Note is a class that represents a musical note. It is represented as a string
+ * such as 'G#3' or as a numerical value.
+ * 
+ * @author	Steve Johnson
+ */
 public class Note {
 	
 	/**
