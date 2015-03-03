@@ -17,8 +17,9 @@ public class Frequency {
 	 * @return		the musical note with this frequency
 	 */
 	public Note toNote() {
-		// TODO: code logic
-		return new Note();
+		double numericValue = Note.MIDDLE_C_NUMERIC_VALUE + 9.0 + 12.0
+				* Math.log(hertz / TUNING_STANDARD) / Math.log(2.0);
+		return new Note(numericValue);
 	}
 	
 	/**

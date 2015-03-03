@@ -50,8 +50,10 @@ public class Wavelength {
 	 * @return		the musical note with this wavelength
 	 */
 	public Note toNote() {
-		// TODO: code logic
-		return new Note();
+		double numericValue = Note.MIDDLE_C_NUMERIC_VALUE + 9.0 + 12.0
+				* Math.log(MIDDLE_C_WAVELENGTH
+				* Math.pow(2.0, -3.0 / 4.0) / inches) / Math.log(2.0);
+		return new Note(numericValue);
 	}
 	
 	/**
